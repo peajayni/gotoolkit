@@ -10,7 +10,7 @@ func NewXids() *Xids {
 
 type Xids struct{}
 
-func (x *Xids) Make() string {
+func (x *Xids) New() string {
 	guid := xid.New()
 	return guid.String()
 }

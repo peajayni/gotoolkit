@@ -9,6 +9,6 @@ import (
 
 func TestUTCTimestampsSmoke(t *testing.T) {
 	ts := NewUTCTimestamps()
-	now := ts.Make()
+	now := ts.New()
 	assert.Equal(t, time.UTC, now.Location())
 }

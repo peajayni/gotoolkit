@@ -10,6 +10,6 @@ func NewUTCTimestamps() *UTCTimestamps {
 
 type UTCTimestamps struct{}
 
-func (f *UTCTimestamps) Make() time.Time {
+func (f *UTCTimestamps) New() time.Time {
 	return time.Now().UTC()
 }

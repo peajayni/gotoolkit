@@ -8,6 +8,6 @@ import (
 
 func TestXidsSmoke(t *testing.T) {
 	ids := NewXids()
-	id := ids.Make()
+	id := ids.New()
 	assert.True(t, len(id) > 0)
 }
