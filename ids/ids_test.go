@@ -11,3 +11,9 @@ func TestXidsSmoke(t *testing.T) {
 	id := ids.New()
 	assert.True(t, len(id) > 0)
 }
+
+func TestUUIDsSmoke(t *testing.T) {
+	ids := NewUUIDs()
+	id := ids.New()
+	assert.True(t, len(id) > 0)
+}
